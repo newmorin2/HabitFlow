@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1E293B;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #0F172A;
+}
+.navbar h1 a{
+    color: whitesmoke;
+    margin-right: 60px;
+    text-decoration: none;
+}
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+    
+}
+.navbar ul a:hover {
+    cursor: pointer;
+}
+.navbar h2 a:hover {
+    cursor: cell;
+}
+
+/* responsive */
+@media  screen and (max-width:425px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+}
