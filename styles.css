@@ -5,6 +5,7 @@
 }
 body{
     background-color: #1E293B;
+    font-family: 'Inter',sans-serif;
 }
 
 .navbar{
@@ -26,8 +27,7 @@ body{
 }
 .navbar ul a {
     color: white;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 .navbar ul a:hover {
     cursor: pointer;
@@ -35,6 +35,43 @@ body{
 .navbar h2 a:hover {
     cursor: cell;
 }
+
+/* Main content */
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin:70px 0 0 0
+}
+.container h1{
+    color:whitesmoke
+}
+.addHabit{
+    border: dotted;
+    border-radius: 20px;
+    width: 40%;
+    margin: 60px auto;
+    text-align: center;
+    padding: 15px;
+    background-color: whitesmoke;
+}
+button{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive */
 @media  screen and (max-width:425px) {
