@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,14 +21,24 @@
     <section>
         <div class="container">
             <h1 id="greeting"></h1>
+        </div>
+        <div>
             <h4 id="date"></h4>
         </div>
+        <div class="cardContainer">
 
-        <div class="addHabit">
+        </div>
+        <div>
+            <input type="text" id="habitInput" placeholder="Enter your habit">
+        </div>
+        <div class="addHabitBtn">
             <button id="addHabit">+ Add new habit</button>
         </div>
     </section>
-    <script src="index.js" ></script>
 
+    <footer class="footer">
+         <p>© 2026 HabitFlow. All rights reserved.</p>
+    </footer>
+    <script src="index.js" ></script>
 </body>
 </html>

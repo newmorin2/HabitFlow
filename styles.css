@@ -5,9 +5,11 @@
 }
 body{
     background-color: #1E293B;
-    font-family: 'Inter',sans-serif;
+    font-family:'Inter',sans-serif;
 }
-
+h1,h2,h3,h4{
+    font-family: 'Poppins',sans-serif ;
+}
 .navbar{
     display: flex;
     justify-content: center;
@@ -41,31 +43,75 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
-    margin:70px 0 0 0
+    margin-top: 50px;
+    /* margin:70px 0 0 50px; */
 }
 .container h1{
-    color:whitesmoke
+    color:whitesmoke;
 }
-.addHabit{
+#date{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+input{
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    margin: 60px auto -40px auto;
+    display: block;
+}
+.addHabitBtn{
     border: dotted;
     border-radius: 20px;
     width: 40%;
     margin: 60px auto;
     text-align: center;
     padding: 15px;
-    background-color: whitesmoke;
+    color: #F97316;
 }
 button{
-    background-color: transparent;
+    background-color: transparent;  
     border: none;
-    color: black;
     font-size: 18px;
+    color: whitesmoke;
+}
+button:hover{
+    cursor: pointer;
+}
+.addHabitBtn:hover{
+    border-color: #f97416a4;
+    cursor: pointer;
+}
+.habit-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: whitesmoke;
+  padding: 15px;
+  width: 40%;
+  margin: 20px auto;
+  border:1px solid #F97316;
+  border-radius: 18px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.habit-card input[type="checkbox"]{
+    margin: 0;
+    display: inline-block;
 }
 
-
-
-
-
+footer{
+    background-color: #0F172A;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    color: whitesmoke;
+    width: 100%;
+}
 
 
 
@@ -74,9 +120,25 @@ button{
 
 
 /* responsive */
-@media  screen and (max-width:425px) {
-    .navbar {
+@media  screen and (max-width:375px) {
+    .navbar h1 a{
+        font-size: 18px;
         display: flex;
-        flex-direction: column;
+        justify-content:left;
+    }
+    .navbar ul a{
+        font-size: 13px;
+    }
+    #greeting{
+        font-size: 23px;
+    }
+    #date{
+        font-size: 13px;
+    }
+    .addHabit{
+        width: 50%;
+    }
+    footer{
+        font-size: 13px;
     }
 }

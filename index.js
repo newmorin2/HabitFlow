@@ -26,11 +26,36 @@ function showDay(){
 }
 showDay()
 
-const button = document.querySelector('button')
-function populate(){
-    const div = document.getElementById('generated')
-    const h1 = document.getElementById('new')
-    h1.textContent = 'hello'
-    div.append(h1)
-}
-button.addEventListener('click',populate)  
+const button = document.getElementById("addHabit");
+const container = document.querySelector(".cardContainer");
+const input = document.getElementById("habitInput");
+
+button.addEventListener("click", function () {
+  const habit = input.value;
+  if (!habit || habit.trim() === "") return;
+
+  const card = document.createElement("div");
+  card.classList.add("habit-card");
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+
+  const text = document.createElement("span");
+  text.innerText = habit;
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      text.style.opacity = "0.5";
+    } else {
+      text.style.textDecoration = "none";
+      text.style.opacity = "1";
+    }
+  });
+  card.appendChild(checkbox);
+  card.appendChild(text);
+
+  container.prepend(card);
+
+  // Clear input
+  input.value = "";
+});
