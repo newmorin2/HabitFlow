@@ -19,6 +19,7 @@ h1,h2,h3,h4{
     align-items: center;
     padding: 20px;
     background-color: #0F172A;
+    border-bottom: #F97316 2px solid;
 }
 .navbar h1 a{
     color: whitesmoke;
@@ -36,9 +37,13 @@ h1,h2,h3,h4{
 }
 .navbar ul a:hover {
     cursor: pointer;
+    color:  #F97316;
+    transition: 2.1s;
 }
-.navbar h2 a:hover {
-    cursor: cell;
+.navbar h1 a:hover {
+    cursor:pointer;
+    color:  #F97316;
+    transition: 2.1s;
 }
 
 /* Main content */
@@ -90,7 +95,7 @@ button{
 button:hover{
     cursor: pointer;
 }
-.habit-card {
+.habitCard {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,24 +104,24 @@ button:hover{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: whitesmoke;
   padding: 15px;
-  width: 25%;
+  /* width: 25%; */
   margin: 20px auto;
   border:2px solid #F97316;
   border-radius: 18px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
 }
-.habit-card input[type="checkbox"]{
+.habitCard input[type="checkbox"]{
     margin: 0;
     display: inline-block;
 }
-.habit-card button {
+.habitCard button {
   margin-left: auto;
   background: transparent;
   border: none;
   cursor: pointer;
   font-size: 18px;
 }
-.habit-card button:hover {
+.habitCard button:hover {
   transform: scale(1.1);
 }
 
@@ -126,10 +131,8 @@ footer{
     padding: 15px;
     margin-top: auto;
     color: whitesmoke;
-    width: 100%;
+    border-top: #F97316 2px solid;
 }
-
-
 
 
 /* responsive */
@@ -143,15 +146,122 @@ footer{
         font-size: 13px;
     }
     #greeting{
+        font-size: 20px;
+    }
+    #date{
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    input{
+        width: 40%;
+    }
+    .addHabitBtn{
+        width: 60%;
+        padding:4px;
+    }
+    .habitCard{
+        width: fit-content;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .habitCard button{
+        font-size: 14px;
+    }
+    button{
+        font-size: 15px;
+    }
+    footer{
+        font-size: 13px;
+    }
+}
+@media  screen and (min-width:425px) {
+    .navbar h1 a{
+        font-size: 21px;
+        display: flex;
+        justify-content:left;
+    }
+    .navbar ul a{
+        font-size: 16px;
+    }
+    #greeting{
         font-size: 23px;
     }
     #date{
         font-size: 13px;
+        margin-top: 5px;
     }
-    .addHabit{
-        width: 50%;
+    input{
+        width: 40%;
+    }
+    .addHabitBtn{
+        width: 60%;
+        padding:7px;
+    }
+    .habitCard{
+        width: fit-content;
+        padding: 5px;
+        font-size: 18px;
+    }
+    .habitCard button{
+        font-size: 16px;
+    }
+    button{
+        font-size: 15px;
     }
     footer{
-        font-size: 13px;
+        font-size: 15px;
+    }
+ }
+@media  screen and (min-width:768px) {
+    .navbar h1 a{
+        font-size: 28px;
+        display: flex;
+        justify-content:left;
+    }
+    .navbar ul a{
+        font-size: 19px;
+    }
+    #greeting{
+        font-size: 29px;
+    }
+    #date{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .addHabitBtn{
+        width: 50%;
+        padding:7px;
+    }
+    button{
+        font-size: 18px;
+    }
+    input{
+        width: 30%;
+    }
+    footer{
+        font-size: 21px;
+    }
+}
+@media  screen and (min-width:1024px) {
+    input{
+        width: 18%;
+    }
+    .addHabitBtn{
+        width: 25%;
+        padding:7px;
+    }
+    .habitCard{
+        width: fit-content;
+        padding: 5px;
+        font-size: 17px;
+    }
+    .habitCard button{
+        font-size: 14px;
+    }
+    button{
+        font-size: 15px;
+    }
+    footer{
+        font-size: 16px;
     }
 }
