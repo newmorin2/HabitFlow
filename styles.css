@@ -95,6 +95,16 @@ button{
 button:hover{
     cursor: pointer;
 }
+.quoteContainer{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.quoteContainer h6{
+    margin-top: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
 .habitCard {
   display: flex;
   flex-direction: row;
