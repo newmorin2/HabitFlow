@@ -26,16 +26,25 @@ function showDay(){
 }
 showDay()
 
+const fallbackQuotes = [
+  "Stay consistent. Results will come.",
+  "Small steps every day lead to big results.",
+  "Discipline beats motivation.",
+  "Progress, not perfection.",
+  "Keep going. You're building something great."
+];
+
 const button = document.getElementById("addHabit");
-const container = document.querySelector(".cardContainer");
+const cardContainer = document.querySelector(".cardContainer");
 const input = document.getElementById("habitInput");
+const quote = document.querySelector('#quote')
+const qouteContainer = document.querySelector('.qouteContainer')
 
 button.addEventListener("click", function () {
-  const habit = input.value;
-  if (!habit || habit.trim() === "") return;
-
+  let habit = input.value;
+  
   const card = document.createElement("div");
-  card.classList.add("habit-card");
+  card.classList.add("habitCard");
 
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
@@ -43,18 +52,36 @@ button.addEventListener("click", function () {
   const text = document.createElement("span");
   text.innerText = habit;
 
+  const deleteBtn = document.createElement('button')
+  deleteBtn.innerText = "🗑️"
+
   checkbox.addEventListener("change", function () {
-    if (checkbox.checked) {
-      text.style.opacity = "0.5";
+    if(checkbox.checked){
+        text.style.opacity = '0.5'
     } else {
       text.style.textDecoration = "none";
       text.style.opacity = "1";
     }
   });
+
+  deleteBtn.addEventListener('click',function(){
+    card.remove()
+  })
+
+  fetch("https://api.quotable.io/random")
+  .then(res => res.json)
+  .then(data =>{
+    quote.innerText = `${data.content} - ${data.author}`
+  })
+  .catch(() => {
+    const random = Math.floor(Math.random() * fallbackQuotes.length)
+    quote.innerText = fallbackQuotes[random]
+  })
+
   card.appendChild(checkbox);
   card.appendChild(text);
-
-  container.prepend(card);
+  card.appendChild(deleteBtn)
+  cardContainer.prepend(card);
 
   // Clear input
   input.value = "";
