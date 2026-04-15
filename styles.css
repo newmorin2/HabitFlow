@@ -6,6 +6,9 @@
 body{
     background-color: #1E293B;
     font-family:'Inter',sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 h1,h2,h3,h4{
     font-family: 'Poppins',sans-serif ;
@@ -63,14 +66,20 @@ input{
     margin: 60px auto -40px auto;
     display: block;
 }
+
 .addHabitBtn{
     border: dotted;
     border-radius: 20px;
-    width: 40%;
+    width: 25%;
     margin: 60px auto;
     text-align: center;
     padding: 15px;
     color: #F97316;
+}
+.addHabitBtn:hover{
+    /* border-color: #f97416a4; */
+    cursor: pointer;
+    transform: scale(1.03);
 }
 button{
     background-color: transparent;  
@@ -79,10 +88,6 @@ button{
     color: whitesmoke;
 }
 button:hover{
-    cursor: pointer;
-}
-.addHabitBtn:hover{
-    border-color: #f97416a4;
     cursor: pointer;
 }
 .habit-card {
@@ -94,9 +99,9 @@ button:hover{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: whitesmoke;
   padding: 15px;
-  width: 40%;
+  width: 25%;
   margin: 20px auto;
-  border:1px solid #F97316;
+  border:2px solid #F97316;
   border-radius: 18px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -104,18 +109,25 @@ button:hover{
     margin: 0;
     display: inline-block;
 }
+.habit-card button {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.habit-card button:hover {
+  transform: scale(1.1);
+}
 
 footer{
     background-color: #0F172A;
     text-align: center;
     padding: 15px;
-    /* margin-top: 30px; */
+    margin-top: auto;
     color: whitesmoke;
     width: 100%;
 }
-
-
-
 
 
 
