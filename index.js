@@ -26,7 +26,7 @@ function showDay(){
 }
 showDay()
 
-const fallbackQuotes = [
+const backupQuotes = [
   "Stay consistent. Results will come.",
   "Small steps every day lead to big results.",
   "Discipline beats motivation.",
@@ -37,11 +37,13 @@ const fallbackQuotes = [
 const button = document.getElementById("addHabit");
 const cardContainer = document.querySelector(".cardContainer");
 const input = document.getElementById("habitInput");
-const quote = document.querySelector('#quote')
-const qouteContainer = document.querySelector('.qouteContainer')
+const quote = document.querySelector('#quote');
+const history = document.getElementById("history");
 
 button.addEventListener("click", function () {
   let habit = input.value;
+
+  if (!habit) return; 
   
   const card = document.createElement("div");
   card.classList.add("habitCard");
@@ -52,37 +54,47 @@ button.addEventListener("click", function () {
   const text = document.createElement("span");
   text.innerText = habit;
 
-  const deleteBtn = document.createElement('button')
-  deleteBtn.innerText = "🗑️"
+  const deleteBtn = document.createElement('button');
+  deleteBtn.innerText = "🗑️";
 
   checkbox.addEventListener("change", function () {
-    if(checkbox.checked){
-        text.style.opacity = '0.5'
+    if (checkbox.checked) {
+      text.style.opacity = '0.5';
     } else {
-      text.style.textDecoration = "none";
       text.style.opacity = "1";
     }
   });
 
-  deleteBtn.addEventListener('click',function(){
-    card.remove()
-  })
+  deleteBtn.addEventListener('click', function () {
+    card.remove();
+  });
 
   fetch("https://api.quotable.io/random")
-  .then(res => res.json)
-  .then(data =>{
-    quote.innerText = `${data.content} - ${data.author}`
-  })
-  .catch(() => {
-    const random = Math.floor(Math.random() * fallbackQuotes.length)
-    quote.innerText = fallbackQuotes[random]
-  })
+    .then(res => res.json())
+    .then(data => {
+      quote.innerText = `${data.content} - ${data.author}`;
+    })
+    .catch(() => {
+      const random = Math.floor(Math.random() * backupQuotes.length);
+      quote.innerText = backupQuotes[random];
+    });
 
   card.appendChild(checkbox);
   card.appendChild(text);
-  card.appendChild(deleteBtn)
+  card.appendChild(deleteBtn);
   cardContainer.prepend(card);
+
+  const historyCard = document.createElement("div");
+  historyCard.classList.add("habitCardTwo");
+
+  const historyText = document.createElement("span");
+  historyText.innerText = habit;
+
+  historyCard.appendChild(historyText);
+  history.prepend(historyCard);
 
   // Clear input
   input.value = "";
 });
+
+
