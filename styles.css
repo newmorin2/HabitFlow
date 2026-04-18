@@ -177,7 +177,6 @@ section h2{
   border-radius: 18px;
   box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
 }
-
 footer{
     background-color: #0F172A;
     text-align: center;
@@ -188,8 +187,49 @@ footer{
 }
 
 
+/* About styling */
+.desc{
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.desc h5{
+    text-align: center;
+    font-weight: 100;
+}
+.improve{
+    text-align: center;
+    color:whitesmoke;
+    margin-top: 40px;
+}
+.flexContainer{
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    margin: 70px 50px 0 50px;
+    color: whitesmoke;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+.improve1{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+}
+.improve2{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
 
+}
+.improve3{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
 
+}
 
 /* RESPONSIVE */
 @media  screen and (max-width:375px) {
