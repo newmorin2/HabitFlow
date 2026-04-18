@@ -48,16 +48,14 @@ This project aims to streamline habit management while providing meaningful insi
 
 ## Features
 
-|      | Component       |                                                                                     |
-| :--- | :-------------- | :------------------------------------------------------------------------------------------ |
- |
- **Code Quality**  | <ul><li>Consistent code style</li></ul> |
- **Documentation** | <ul><li>README.md provides project overview, setup, usage instructions</li><li>Inline comments in source code</li></ul> |
- **Integrations**  | <ul><li>Uses HTML and Markdown for content formatting</li><li>CI/CD pipelines configured with GitHub Actions</li></ul> |
- | **Modularity**    | <ul><li>Separate modules for core features: habit tracking, habit viewing, UI components</li><li>Reusable JavaScript functions and components</li></ul> |
- | **Testing**       | <ul><li>Basic unit tests with Jest for core logic functions</li><li>Manual testing for UI interactions</li></ul> |
- | **Performance**   | <ul><li>Lightweight JavaScript, minimal dependencies</li><li>Optimized DOM updates for responsiveness</li></ul> |
- | **Security**      | <ul><li>Content sanitization for user inputs</li><li>Limited external dependencies, no known vulnerabilities</li></ul> |
+
+ **Code Quality**   <ul><li>Consistent code style</li></ul> |
+ **Documentation**  <ul><li>README.md provides project overview, setup, usage instructions</li><li>Inline comments in source code</li></ul> |
+ **Integrations**   <ul><li>Uses HTML and Markdown for content formatting</li><li>CI/CD pipelines configured with GitHub Actions</li></ul> |
+ | **Modularity**   <ul><li>Separate modules for core features: habit tracking, habit viewing, UI components</li><li>Reusable JavaScript functions and components</li></ul> |
+ | **Testing**      <ul><li>Basic unit tests with Jest for core logic functions</li><li>Manual testing for UI interactions</li></ul> |
+ | **Performance**  <ul><li>Lightweight JavaScript, minimal dependencies</li><li>Optimized DOM updates for responsiveness</li></ul> |
+ | **Security**     <ul><li>Content sanitization for user inputs</li><li>Limited external dependencies, no known vulnerabilities</li></ul> |
  
 
 ---
