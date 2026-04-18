@@ -46,7 +46,7 @@ h1,h2,h3,h4{
     transition: 2.1s;
 }
 
-/* Main content */
+/* hOME STYLES */
 .container{
     display: flex;
     justify-content:center;
@@ -98,8 +98,16 @@ button:hover{
 .quoteContainer{
     text-align: center;
     color: whitesmoke;
-    font-size: 20px;
     margin-bottom: 30px;
+    background-color:#151c2921;
+    width: 30%;
+    margin: auto;
+    border: 1px;
+    border-radius: 8px;
+    padding: 10px;
+}
+.quoteContainer h5{
+    font-size: 16px;
 }
 .quoteContainer h6{
     margin-top: 10px;
@@ -134,6 +142,41 @@ button:hover{
 .habitCard button:hover {
   transform: scale(1.1);
 }
+section h2{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 190px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.habitsContainer{
+    height: 110vh;
+}
+#history{
+    background-color: #151c2969;
+    height: 350px;
+    color: whitesmoke;
+    padding: 30px;
+    width: 40%;
+    margin: auto;
+    border-radius: 15px;
+}
+.habitCardTwo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  font-size: 19px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: whitesmoke;
+  padding: 15px;
+  width: 45%;
+  color: black;
+  margin: 20px auto;
+  border:2px solid #F97316;
+  border-radius: 18px;
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
+}
 
 footer{
     background-color: #0F172A;
@@ -145,7 +188,10 @@ footer{
 }
 
 
-/* responsive */
+
+
+
+/* RESPONSIVE */
 @media  screen and (max-width:375px) {
     .navbar h1 a{
         font-size: 18px;
@@ -179,6 +225,9 @@ footer{
     }
     button{
         font-size: 15px;
+    }
+    .quoteContainer{
+        font-size: 16px;
     }
     footer{
         font-size: 13px;
@@ -218,6 +267,9 @@ footer{
     button{
         font-size: 15px;
     }
+    .quoteContainer{
+        font-size: 18px;
+    }
     footer{
         font-size: 15px;
     }
@@ -244,6 +296,9 @@ footer{
     }
     button{
         font-size: 18px;
+    }
+    .quoteContainer{
+        font-size: 22px;
     }
     input{
         width: 30%;
