@@ -151,6 +151,7 @@ section h2{
 }
 .habitsContainer{
     height: 110vh;
+    margin-bottom: 40px;
 }
 #history{
     background-color: #151c2969;
@@ -206,7 +207,7 @@ footer{
 .flexContainer{
     font-family:'Courier New', Courier, monospace;
     display: flex;
-    margin: 70px 50px 0 50px;
+    margin: 70px 50px 30px 50px;
     color: whitesmoke;
     text-align: center;
     gap: 20px;
@@ -217,6 +218,7 @@ footer{
     background-color: #151c2969;
     border-radius: 12px;
     padding: 12px;
+    height: 315px;
 }
 .improve2{
     background-color: #151c2969;
@@ -229,6 +231,11 @@ footer{
     border-radius: 12px;
     padding: 12px;
 
+}
+img{
+    width: 300px;
+    height: 170px;
+    border-radius: 12px;
 }
 
 /* RESPONSIVE */
@@ -263,12 +270,70 @@ footer{
     .habitCard button{
         font-size: 14px;
     }
+    #history{
+        height: fit-content;
+        width: 65%;
+    }
     button{
         font-size: 15px;
     }
     .quoteContainer{
         font-size: 16px;
     }
+    .desc{
+    font-size: 12px;
+    color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    }
+.desc h5{
+    text-align: center;
+    font-weight: 100;
+    margin-top: 16px;
+}
+.improve h3{
+    text-align: center;
+    color:whitesmoke;
+    font-size: 14px;
+}
+.flexContainer{
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 50px 30px 50px;
+    color: whitesmoke;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+.flexContainer p{
+    font-size: 14px;
+}
+.improve1{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+    height: fit-content;
+}
+.improve2{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+
+}
+.improve3{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+
+}
+img{
+    width: 200px;
+    height: 140px;
+    border-radius: 12px;
+}
     footer{
         font-size: 13px;
     }
@@ -310,6 +375,64 @@ footer{
     .quoteContainer{
         font-size: 18px;
     }
+    #history{
+        height: fit-content;
+        width: 65%;
+    }
+    .desc{
+    font-size: 13px;
+    color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    }
+.desc h5{
+    text-align: center;
+    font-weight: 100;
+    margin-top: 16px;
+}
+.improve h3{
+    text-align: center;
+    color:whitesmoke;
+    font-size: 17px;
+}
+/* .flexContainer{
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 50px 30px 50px;
+    color: whitesmoke;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+} */
+.flexContainer p{
+    font-size: 14px;
+}
+.improve1{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+    height: fit-content;
+}
+.improve2{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+
+}
+.improve3{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+
+}
+img{
+    width: 200px;
+    height: 140px;
+    border-radius: 12px;
+}
     footer{
         font-size: 15px;
     }
@@ -343,6 +466,65 @@ footer{
     input{
         width: 30%;
     }
+    #history{
+        height: fit-content;
+        width: 65%;
+    }
+    .desc{
+    font-size: 19px;
+    color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    }
+.desc h5{
+    text-align: center;
+    font-weight: 100;
+    margin-top: 18px;
+    font-size: 17px;
+}
+.improve h3{
+    text-align: center;
+    color:whitesmoke;
+    font-size: 20px;
+}
+/* .flexContainer{
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 70px 50px 30px 50px;
+    color: whitesmoke;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+} */
+.flexContainer p{
+    font-size: 18px;
+}
+.improve1{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+    height: fit-content;
+}
+.improve2{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+}
+.improve3{
+    background-color: #151c2969;
+    border-radius: 12px;
+    padding: 12px;
+
+}
+img{
+    width: 350px;
+    height: 170px;
+    border-radius: 12px;
+}
     footer{
         font-size: 21px;
     }
