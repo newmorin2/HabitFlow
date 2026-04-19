@@ -206,7 +206,8 @@ footer{
 }
 .flexContainer{
     font-family:'Courier New', Courier, monospace;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     margin: 70px 50px 30px 50px;
     color: whitesmoke;
     text-align: center;
@@ -214,11 +215,14 @@ footer{
     justify-content: center;
     align-items: start;
 }
+.flexContainer h3{
+    color: #F97316;
+}
 .improve1{
     background-color: #151c2969;
     border-radius: 12px;
     padding: 12px;
-    height: 315px;
+    /* height: 315px; */
 }
 .improve2{
     background-color: #151c2969;
@@ -230,7 +234,6 @@ footer{
     background-color: #151c2969;
     border-radius: 12px;
     padding: 12px;
-
 }
 img{
     width: 300px;
@@ -310,6 +313,9 @@ img{
 }
 .flexContainer p{
     font-size: 14px;
+}
+.flexContainer h3{
+    color: #F97316;
 }
 .improve1{
     background-color: #151c2969;
@@ -407,8 +413,14 @@ img{
     justify-content: center;
     align-items: start;
 } */
+ .flexContainer{
+    grid-template-columns: repeat(1, 1fr);
+ }
 .flexContainer p{
     font-size: 14px;
+}
+.flexContainer h3{
+    color: #F97316;
 }
 .improve1{
     background-color: #151c2969;
@@ -470,6 +482,7 @@ img{
         height: fit-content;
         width: 65%;
     }
+    
     .desc{
     font-size: 19px;
     color: whitesmoke;
@@ -501,7 +514,10 @@ img{
     align-items: start;
 } */
 .flexContainer p{
-    font-size: 18px;
+    font-size: 16px;
+}
+.flexContainer h3{
+    color: #F97316;
 }
 .improve1{
     background-color: #151c2969;
@@ -541,6 +557,13 @@ img{
         width: fit-content;
         padding: 5px;
         font-size: 17px;
+    }
+    .flexContainer h3{
+    color: #F97316;
+    }
+    .flexContainer{
+        width: 50%;
+        margin: 90px auto;
     }
     .habitCard button{
         font-size: 14px;
