@@ -41,7 +41,6 @@ The application demonstrates key front-end development concepts such as DOM mani
 
 ## Features
 
-
  **Code Quality**   <ul><li>Consistent code style</li></ul> 
  **Documentation**  <ul><li>README.md provides project overview, setup, usage instructions</li><li>Inline comments in source code</li></ul> 
  **Integrations**   <ul><li>Uses HTML and Markdown for content formatting</li><li>CI/CD pipelines configured with GitHub Actions</li></ul> 
@@ -100,7 +99,9 @@ Run the project with:
 
 'Live Server'
 
+Run the test with:
 
+'npm test'
 
 ## Contributing
 
