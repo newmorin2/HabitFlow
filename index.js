@@ -15,6 +15,21 @@ function showGreeting(){
 }
 showGreeting()
 
+function displayGreeting(){
+    const d = new Date()
+    const hour =d.getHours()
+    message = ''
+    if(hour < 12){
+        return message = 'Good morning'
+    }else if(hour < 18){
+        return message = 'Good Afternoon'
+    }
+    else{
+        return 'Good Evening'
+    }
+}
+displayGreeting()
+
 function showDay(){
     const d = new Date()
     const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
@@ -96,5 +111,4 @@ button.addEventListener("click", function () {
   // Clear input
   input.value = "";
 });
-
 
