@@ -11,7 +11,6 @@ Transform Habits, Unlock Your Full Potential
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" alt="JavaScript">
 <img src="https://img.shields.io/badge/CSS-0080ff.svg?style=flat&logo=CSS&logoColor=black" alt="CSS">
 
-</div>
 <br>
 
 ---
@@ -28,23 +27,17 @@ Transform Habits, Unlock Your Full Potential
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 
----
 
 ## Overview
 
-HabitFlow is an innovative habit-tracking platform that motivates personal growth across health, productivity, and creative pursuits.
+The Habit Tracker is a simple web application built using HTML, CSS, and JavaScript that helps users create and track daily habits. The goal of the project is to encourage consistency and productivity by allowing users to log habits and view them in an organized, visual format.
 
-**Why HabitFlow?**
+Users can enter a habit and add it using a button. Each habit is then displayed as a card within the application, creating a growing list of activities the user wants to maintain. The interface updates dynamically without needing to reload the page, providing a smooth and interactive experience.
 
-This project aims to streamline habit management while providing meaningful insights and motivation. The core features include:
+Additionally, the app integrates a quotes API to display a motivational quote whenever a new habit is added. This enhances user engagement and encourages continued use of the app.
 
-- **Interactive Dashboard:** A dynamic interface displaying personalized greetings, current date, and motivational quotes to boost user engagement.
--  **Historical Data View:** Seamlessly review past interactions and analyze progress to inform future habits.
-- **Modular Architecture:** Clear component interactions and comprehensive documentation facilitate easy extension and maintenance.
-- **Real-Time Updates:** Instant feedback on habit entries with visual cues, enhancing user experience.
-- **Customizable UI:** Tailor task management features to fit individual goals and preferences.
+The application demonstrates key front-end development concepts such as DOM manipulation, event handling, and working with external APIs.
 
----
 
 ## Features
 
@@ -58,7 +51,6 @@ This project aims to streamline habit management while providing meaningful insi
  **Security**     <ul><li>Content sanitization for user inputs</li><li>Limited external dependencies, no known vulnerabilities</li></ul> 
  
 
----
 
 ## Project Structure
 
@@ -70,8 +62,6 @@ This project aims to streamline habit management while providing meaningful insi
     ├── index.js
     ├── styles.css
 ```
-
----
 
 ## Getting Started
 
@@ -111,7 +101,6 @@ Run the project with:
 'Live Server'
 
 
----
 
 ## Contributing
 
